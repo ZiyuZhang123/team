@@ -1,0 +1,6 @@
+interface:
+  display_name: "云效分支创建"
+  short_description: "通过云效接口创建或同步分支，并可关联工作项与删除策略设置"
+  default_prompt: "使用 $yunxiao-create-branch 创建或同步云效分支，并按需关联工作项。"
+policy:
+  allow_implicit_invocation: true

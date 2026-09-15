@@ -1,0 +1,16 @@
+interface:
+  display_name: "Yunxiao ICI Minipro Executor"
+  short_description: >-
+    Trigger Yunxiao mini program pipelines, poll status, fetch QR/preview results,
+    or list recent mini program flows (getFlowList flowType=1).
+  default_prompt: >-
+    Use $yunxiao-ici-minipro-executor for mini program pipeline runs: trigger
+    (URL or flowId), list recent pipelines, status, result, or auto wait-for-result.
+    For getFlowList / list: default limitNum is 5 (run list without --limit-num);
+    only pass --limit-num when the user asks for a different count.
+    When presenting the pipeline table to the user: include platform type (prodOs),
+    never include prodId in the table.
+    Label the CreateTime column for users as 最后构建时间 (not 最近记录时间).
+
+policy:
+  allow_implicit_invocation: true
