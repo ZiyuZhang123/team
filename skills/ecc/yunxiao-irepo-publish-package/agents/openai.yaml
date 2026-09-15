@@ -1,0 +1,3 @@
+interface:
+  display_name: "iRepo 确认链接"
+  short_description: "只生成 publishTable 确认链接（php/jar/npm）"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "云效环境部署"
+  short_description: "部署/新建 iONE·云效：token 先读 YUNXIAO_SKILL_TOKEN 再尝试加载 shell 配置，最后才问用户；三接口 projects 可复用；与 SKILL 一致。"
+  default_prompt: "严格按 yunxiao-deploy-env SKILL：token 须先读 YUNXIAO_SKILL_TOKEN，没有再尝试 source ~/.zshrc 等后再读，仍无才询问用户；勿一上来索要 token。projects 三接口一致可复用；组装前解释并询问 moduleName。**仅** createEnv 成功返回的 result 链接不自动打开；**deploy** 返回的 result 链接要在浏览器打开（用户拒绝除外）。终端：deploy_env.sh [--module-name]；非交互加 --no-module-prompt。"

@@ -1,0 +1,9 @@
+interface:
+  display_name: "ICI Beta Executor"
+  short_description: "Trigger Yunxiao standard pipeline builds/packages or list recent pipelines (getFlowList + runFlowBeta)."
+  default_prompt: >-
+    Use $yunxiao-ici-beta-executor to trigger a Yunxiao standard pipeline build/package (URL or flowId), or list recent pipelines so the user can pick a flowId.
+    When presenting the pipeline list table, label the CreateTime column for users as 最后构建时间 (not 最近记录时间).
+
+policy:
+  allow_implicit_invocation: true
